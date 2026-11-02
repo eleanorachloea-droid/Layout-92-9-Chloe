@@ -1,0 +1,261 @@
+body{
+    background-image: url(mlp\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    text-align: center;
+    background-color: rgb(247, 149, 180);
+    height: 40px;
+    color:black}
+h1{text-align: center;
+    text-shadow: 2px 3px 10px rgb(19, 21, 137);
+    color:black (8, 76, 56);
+    background-color: rgb(150, 139, 248);
+    width: 800px;
+    font-size: 30px;
+    margin: 0 auto;
+    font-family: "yea";
+    border-radius: 56px 0px 56px 0px;}
+div.biodata{
+    margin: 20px auto;
+    width: 80%;
+    background-color:aqua;
+    color:aqua (253, 255, 199);
+    padding: 30px;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap:30px;}
+div.foto{
+    position: relative;
+    width:250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid aqua (74, 189, 111);
+    box-shadow: 0 10px 20px aqua (159, 219, 179);}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.05);}
+div.foto img.bottom{
+    opacity: 1;
+    z-index: 1;}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.05);}
+p.judul{
+    text-align: center;
+    background-color: rgb(185, 234, 255);
+    height: 50px;
+    width: 400px;
+    color:blueviolet;
+    border: 3px dotted rgb(185, 234, 255);
+    border-radius: 12px 12px 12px 12px;
+    font-family: "ABCD";
+    font-size: 30px;
+    margin: 0 auto;}    
+div.favfood{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:60px;}
+div.Claypot:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgb(133, 112, 253);}
+div.Hotpot:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgb(99, 255, 99);}
+div.Mala:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgb(133, 112, 253);}
+div.Samyang:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgb(99, 255, 99);}
+div.Xiaolong:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 10px 20px rgb(133, 112, 253);}
+div.favdrink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:60px;}
+div.Air:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s, border-radius 0.1s ease;
+    box-shadow: 0 10px 20px rgb(238, 135, 178);}
+div.Boost:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s, border-radius 0.1s ease;
+    box-shadow: 0 10px 20px rgb(237, 255, 39);}
+div.Teh:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s, border-radius 0.1s ease;
+    box-shadow: 0 10px 20px rgb(238, 135, 178);}
+div.Matcha:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s, border-radius 0.1s ease;
+    box-shadow: 0 10px 20px rgb(237, 255, 39);}
+div.Teazzi:hover img{
+    border-radius: 12px 12px 12px 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s, border-radius 0.1s ease;
+    box-shadow: 0 10px 20px rgb(238, 135, 178);}
+
+.container{
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: #f4f4f4;
+    padding: 20px 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12rem;
+    gap: 2rem;
+    width: max-content;
+    animation: animate 10s linear infinite;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    to{
+        transform: translateX(calc(-5 * (12rem + 2rem)));
+    }
+}
+
+.wrapper img:hover {
+    transform: scale(1.1);
+}
+
+.favtoys {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.favtoys > div {
+  background-color: #bf6ef1; 
+  border-radius: 40px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.favtoys img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.favtoys p {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.favtoys > div:hover {
+  background-color: #ff9bbe; 
+  box-shadow: 10px 10px 20px rgba(133, 145, 240, 0.6); 
+  transform: translateY(-5px); 
+}
+
+.container{
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: #f4f4f4;
+    padding: 20px 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 12rem;
+    gap: 2rem;
+    width: max-content;
+    animation: animate 10s linear infinite;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes animate {
+    to{
+        transform: translateX(calc(-5 * (12rem + 2rem)));
+    }
+}
+
+.wrapper img:hover {
+    transform: scale(1.1);
+}

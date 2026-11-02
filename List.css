@@ -1,0 +1,21 @@
+ol {
+    background: lightblue; 
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+ol li {
+    background: lightcoral; 
+    color: #000000;
+    padding: 8px 12px;
+    margin: 5px 0;
+    list-style-position: inside;
+    font-weight: 500;
+}
+
+ol li:nth-child(5) {
+    background: lightgreen; 
+    color: black;
+}
